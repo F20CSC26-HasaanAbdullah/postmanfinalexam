@@ -19,6 +19,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{matrix.Nodev}}
+      
       - name: Install newman and report
         run: npm install -g newman 
 
