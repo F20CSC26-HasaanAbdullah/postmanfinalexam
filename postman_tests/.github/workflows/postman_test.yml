@@ -1,8 +1,11 @@
 name: Postman API Testing
 
-on: [push]
-
-
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+      branches: [ "main" ]
+  
 jobs:
     Api-Testing:
         runs-on: ubuntu-latest
